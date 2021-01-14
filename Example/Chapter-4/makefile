@@ -1,8 +1,10 @@
 
 .PHONY:all
 
-all:calculator.exe atof_test.exe atoi.exe calaulator_ex.exe
+all:calculator.exe atof_test.exe atoi.exe calaulator_ex.exe qsort_test.exe
 
+qsort_test.exe: qsort.c qsort_test.c
+	cc -o qsort_test.exe qsort_test.c qsort.c
 calaulator_ex.exe:calaulator_ex.c getch.c stack.c
 	cc -o calaulator_ex.exe calaulator_ex.c getch.c stack.c
 calculator.exe:calculator.c getline.c atof.c
