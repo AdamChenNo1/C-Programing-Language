@@ -4,14 +4,14 @@
  * @Author: Elon C
  * @Date: 2021-01-13 20:38:33
  * @LastEditors: Elon C
- * @LastEditTime: 2021-01-13 21:39:45
+ * @LastEditTime: 2021-01-22 21:52:09
  * @FilePath: \C-Programing-Language\Example\Chapter-4\stack.c
  */
 #include <stdio.h>
 
 #define MAXVAL 100 /*栈val的最大深度*/
 
-int sp = 0;         //下一个空闲位置
+int sp = 1;         //下一个空闲位置
 double val[MAXVAL]; //值栈
 
 /*push函数：将f压入栈中*/
